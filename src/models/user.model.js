@@ -82,9 +82,11 @@ userSchema.methods.generateRefreshToken = function () {
   },
     process.env.REFRESH_TOKEN, // put this in env with same name
     {
-      expiresIn: "10d", // put this in env with same name
+      expiresIn: "10d", // put this in env with same name 
     },
   )
 };
+
+// checking
 
 export const User = mongoose.model("User", userSchema);
